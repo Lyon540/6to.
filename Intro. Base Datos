@@ -1,0 +1,14 @@
+Create database UMM
+Use UMM
+
+Create Table Alumnos(
+Matricula Int Primary Key,
+Nombre Varchar(30),
+Apellido varchar (50),
+Localidad varchar (50),
+Fecha_Nac datetime,
+Direccion varchar (50),
+Curso Int,
+Nivel varchar(30),
+Faltas int
+)
