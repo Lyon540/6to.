@@ -12,3 +12,5 @@ Curso Int,
 Nivel varchar(30),
 Faltas int
 )
+
+Insert into Alumnos values ('123456','Juan Miguel','Soler Vidal','Monterrey', '1985-10-10', 'Mar Jonico 214', '1', 'Profesional', '15');
