@@ -13,4 +13,13 @@ Nivel varchar(30),
 Faltas int
 )
 
-Insert into Alumnos values ('123456','Juan Miguel','Soler Vidal','Monterrey', '1985-10-10', 'Mar Jonico 214', '1', 'Profesional', '15');
+Insert into Alumnos values (123456,'Juan Miguel','Soler Vidal','Monterrey', '1985-10-10', 'Mar Jonico 214', 1, 'Profesional', 15)
+Insert into Alumnos values (654321,'Laura','Gomez','Guadalupe', '1993-05-05', 'Plaza Mayor 62', 3, 'Bachillerato', 25)
+Insert into Alumnos values (765432,'Beatriz','Martinez','Monterrey', '1990-03-06', 'Diego Diaz 475', 1, 'Profesional', 34)
+Insert into Alumnos values (445544,'Javier','Cano Riquelme','Monterrey', '1992-01-07', 'Mar Negro', 4, 'Bachillerato', 13)
+Insert into Alumnos values (223322,'Raquel','Rubio','San Pedro', '1990-11-23', 'San Juan 563', 1, 'Profesional', 7)
+Insert into Alumnos values (998887,'Cristina','Sanchez','Escobedo', '1995-03-19', 'Camino Real 32', 1, 'Bachillerato', 1)
+Insert into Alumnos values (334455,'Pedro','Rodriguez','Apodaca', '1994-10-03', 'Camino de Badel', 2, 'Bachillerato', 11)
+Insert into Alumnos values (993322,'Gema','Rubio','Apodaca', '1992-09-09', 'Leones 496', 1, 'Profesional', 19)
+Insert into Alumnos values (554411,'Joaquin','Hernandez','San Pedro', '1991-10-03', 'Rocallosas 745', 2, 'Profesional', 14)
+Insert into Alumnos values (334400,'Javier','Gomez','Guadalupe', '1984-12-12', 'Mar Negro 452', 3, 'Profesional', 0)
