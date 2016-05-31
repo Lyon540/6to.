@@ -78,3 +78,32 @@ where (Faltas>=10 and Faltas <=20) and Localidad='Monterrey' and Nivel='Bachille
 /*ejercicio 20*/
 Select * from Alumnos
 where (Faltas<=10 and Faltas>=20)
+/*ejercicio 21*/
+Select * from Alumnos 
+where Fecha_Nac = 1993 and Fecha_Nac= 1994
+/*ejercicio 22*/
+Select*from Alumnos
+where Curso= 1 or Curso=2
+/*ejercicio 23*/
+Select * from Alumnos 
+where Curso=3 or Curso=4 and Localidad ='Monterrey'
+/*ejercicio 24*/
+Select* from Alumnos
+ where Nivel<>'Profecional'
+/*ejercicio 25*/
+Select * from Alumnos
+where Curso=1 or Curso=2 and Nivel <>'Bachillerato'
+/*ejercicio 26*/
+Select*from Alumnos
+where Localidad='Monterrey' and Faltas>=10 and Nivel<>'Bachillerato'
+/*ejercicio 27*/
+Update Alumnos
+Set Apellido= 'Rodriguez Rubio'
+where Nombre='Raquel'
+/*ejercicio 28*/
+Update Alumnos
+Set Faltas= 10
+where Matricula = 123456
+Update Alumnos
+Set Curso= 4
+where Matricula = 123456
