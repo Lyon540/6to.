@@ -42,6 +42,39 @@ where Localidad ='Guadalupe'
 /*ejercicio 8*/
 Select* from Alumnos
 where Localidad ='Monterrey' or Localidad='San Pedro'
-/*ejercicio 7*/
+/*ejercicio 9*/
 Select * from Alumnos
-where Localidad ='Monterrey'and Nivel='Bachillerato'
+where Localidad ='Monterrey'and Nivel='Bachillerato' and Curso='1'
+/*ejercicio 10*/
+Select * from Alumnos
+where Localidad ='Guadalupe'and Nivel='Bachillerato' and Curso='2' and Faltas='10'
+/*ejercicio 11*/
+Select Nombre, Curso, Faltas from Alumnos
+where (Curso='1' or  Curso='2') and Faltas >=10
+/*ejercicio 12*/
+Select Nombre, Curso, Faltas from Alumnos
+where (Curso='3' or  Curso='4') and Faltas <=10 and Localidad='Monterrey'
+/*ejercicio 13*/
+Select * from Alumnos
+where Curso= 1 and Faltas <=10 and Nivel='Bachilerato'
+/*ejercicio 14*/
+Select * from Alumnos
+where Apellido='Gomez'
+/*ejercicio 15*/
+Select * from Alumnos
+where Localidad='Monterrey' and Nombre='Javier'
+/*ejercicio 16*/
+Select * from Alumnos
+where Localidad='Escobedo' and Curso=1 and Nivel='Bachillerato'
+/*ejercicio 17*/
+Select * from Alumnos
+where (Faltas>=10 and Faltas <=20)
+/*ejercicio 18*/
+Select * from Alumnos
+where (Faltas>=10 and Faltas <=20) and Localidad='Monterrey'
+/*ejercicio 19*/
+Select * from Alumnos
+where (Faltas>=10 and Faltas <=20) and Localidad='Monterrey' and Nivel='Bachillerato' and Curso=1
+/*ejercicio 20*/
+Select * from Alumnos
+where (Faltas<=10 and Faltas>=20)
