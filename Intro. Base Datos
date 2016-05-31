@@ -107,3 +107,39 @@ where Matricula = 123456
 Update Alumnos
 Set Curso= 4
 where Matricula = 123456
+/*ejercicio 29*/
+Update Alumnos
+Set Direccion='Mar Negro 632'
+Where Nombre='Javier' and Apellido='Cano Riquelme'
+/*ejercicio 30*/
+Update Alumnos
+Set Fecha_Nac='1992-09-10'
+Where Fecha_Nac ='1992-09-09'
+/*ejercicio 31*/
+Update Alumnos
+Set Nivel='Bachillerato'
+Where Apellido='Rubio' and Localidad='Apodaca'
+/*ejercicio 32*/
+Update Alumnos
+Set Apellido='Soler Barrera'
+Where Nombre='Juan Miguel' and Nivel='Profesional'
+/*ejercicio 33*/
+Update Alumnos
+Set Matricula=554413
+Where Matricula=554411
+/*ejercicio 34*/
+Delete from Alumnos
+where Faltas >20
+/*ejercicio 35*/
+Delete from Alumnos
+where Localidad='Monterrey' and Nivel='Bachillerato' and Faltas <=15
+/*ejercicio 36*/
+Delete from Alumnos
+where Fecha_Nac >='1993-01-01' and Nivel='Bachillerato' and Curso=2
+/*ejercicio 37*/
+Delete from Alumnos
+where Faltas>25 and Localidad='Monterrey'
+/*ejercicio 38*/
+Delete from Alumnos
+where Curso=4 and Localidad='San Pedro'
+
