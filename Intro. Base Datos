@@ -23,3 +23,25 @@ Insert into Alumnos values (334455,'Pedro','Rodriguez','Apodaca', '1994-10-03', 
 Insert into Alumnos values (993322,'Gema','Rubio','Apodaca', '1992-09-09', 'Leones 496', 1, 'Profesional', 19)
 Insert into Alumnos values (554411,'Joaquin','Hernandez','San Pedro', '1991-10-03', 'Rocallosas 745', 2, 'Profesional', 14)
 Insert into Alumnos values (334400,'Javier','Gomez','Guadalupe', '1984-12-12', 'Mar Negro 452', 3, 'Profesional', 0)
+
+/*ejercicio 3*/
+Select *
+from Alumnos
+/*ejercicio 4*/
+Select Nombre,Localidad, Fecha_Nac
+from Alumnos
+/*ejercicio 5*/
+Select Nombre
+from Alumnos
+/*ejercicio 6*/
+Select Nombre, Faltas
+from Alumnos
+/*ejercicio 7*/
+Select* from Alumnos
+where Localidad ='Guadalupe'
+/*ejercicio 8*/
+Select* from Alumnos
+where Localidad ='Monterrey' or Localidad='San Pedro'
+/*ejercicio 7*/
+Select * from Alumnos
+where Localidad ='Monterrey'and Nivel='Bachillerato'
