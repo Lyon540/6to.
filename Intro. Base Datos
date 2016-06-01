@@ -1,3 +1,5 @@
+Practica 2
+
 Create database UMM
 Use UMM
 
@@ -143,3 +145,51 @@ where Faltas>25 and Localidad='Monterrey'
 Delete from Alumnos
 where Curso=4 and Localidad='San Pedro'
 
+Practica 3
+
+Create database UMM
+Use UMM
+
+Create table Alumnos(
+Codigo int Primary Key identity,
+Fecha datetime,
+Nombre varchar(60),
+Direccion varchar(80),
+Telefono varchar(20),
+Carrera varchar (40)
+)
+
+Insert into Alumnos values ('02-05-2012', 'Cabrera Ortiz, Pedro', 'Miguel Nieto 2121, Fraccionamiento Industrial', '8345-0982', 'Ciencias Politicas')
+Insert into Alumnos values ('03/03/2012', 'Garcia Garcia, Ana', 'Capitan Mariano Azueta 1900, Buenos Aires', '8621-7563', 'Psicologia')
+Insert into Alumnos values ('12/03/2012', 'Cabrera Gonzalez, Raul', 'Loma Redonda 456. Loma Larga', '1345-9822', 'Odontologia')
+Insert into Alumnos values ('07/06/2012', 'Perez Almanza, Cristina', 'Juan Mendez 842, Centro', '1042-8472', 'Sociologia')
+Insert into Alumnos values ('05/12/2012', 'Garcia Reyes, Georgina', 'Los Cedros 94, Mitras Centro', '6213-8946', 'Odontologia')
+
+Select* from Alumnos
+
+Insert into Alumnos values ('22/01/2012', 'Flores Briones, Patricia', 'Eugenio Garza Sada 402, Alta Vista', '6453-8686', 'Nutricion')
+
+Insert into Alumnos values (4, '14/Febrero/2012', 'Hernandez Suarez, Lorena', 'Lagos 922, Gonzalitos', '8230-09742', 'Contaduria')
+
+Practica 4
+
+Create Database Empresa
+Use Empresa
+
+Create Table Proveedor(
+Codigo int Primary Key,
+Nombre varchar (60),
+Direccion varchar (60),
+Ciudad varchar (30),
+Correo varchar (20) default 'Sin Correo',
+Telefono varchar (40) default 'Sin telefono'
+)
+
+Insert into Proveedor values (1, 'Martinez y Asociados', 'Juarez 746', 'Guadalupe', default, '8420-0922')
+Insert into Proveedor values (2, 'Abarrotes Garza', 'Arramberri 249', 'Monterrey', 'abarrotesgarza@correo.com', default)
+Insert into Proveedor values (5, 'Industrias Monterrey', 'Modesto Arreola 900', 'San Nicolas', 'industrialmty@correo.com', '8584-9011')
+Insert into Proveedor values (18, 'Media Point', 'Gonzalitos 299', 'Monterrey', default, default)
+Insert into Proveedor values (32, 'Materia Gris', 'Ruiz Cortinez', 'Garcia', default, default)
+Insert into Proveedor values (45, 'Fabiola Hernandez Silva', 'Cuauhtemoc 859', 'Monterrey', 'fhernandez@correo.com', '1049-0933')
+
+select * from Proveedor
