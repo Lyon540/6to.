@@ -181,8 +181,8 @@ Codigo int Primary Key,
 Nombre varchar (60),
 Direccion varchar (60),
 Ciudad varchar (30),
-Correo varchar (20) default 'Sin Correo',
-Telefono varchar (40) default 'Sin telefono'
+Correo varchar (40) default 'Sin Correo',
+Telefono varchar (20) default 'Sin telefono'
 )
 
 Insert into Proveedor values (1, 'Martinez y Asociados', 'Juarez 746', 'Guadalupe', default, '8420-0922')
