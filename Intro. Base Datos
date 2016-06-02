@@ -167,7 +167,7 @@ Insert into Alumnos values ('05/12/2012', 'Garcia Reyes, Georgina', 'Los Cedros 
 
 Select* from Alumnos
 
-Insert into Alumnos values ('22/01/2012', 'Flores Briones, Patricia', 'Eugenio Garza Sada 402, Alta Vista', '6453-8686', 'Nutricion')
+Insert into Alumnos values ('01/22/2012', 'Flores Briones, Patricia', 'Eugenio Garza Sada 402, Alta Vista', '6453-8686', 'Nutricion')
 
 Insert into Alumnos values (4, '14/Febrero/2012', 'Hernandez Suarez, Lorena', 'Lagos 922, Gonzalitos', '8230-09742', 'Contaduria')
 
