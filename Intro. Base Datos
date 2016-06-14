@@ -193,3 +193,37 @@ Insert into Proveedor values (32, 'Materia Gris', 'Ruiz Cortinez', 'Garcia', def
 Insert into Proveedor values (45, 'Fabiola Hernandez Silva', 'Cuauhtemoc 859', 'Monterrey', 'fhernandez@correo.com', '1049-0933')
 
 select * from Proveedor
+
+Pracica 1 segundo Parcial
+
+Create database Hospital
+Use Hospital
+
+Create table Hospitales(
+Codigo int Primary Key,
+Nombre varchar (50) not null,
+Direccion varchar(60),
+Telefono varchar(20)
+)
+
+Insert into Hospitales values (5,'OCA Hospital','Pino Suarez 645 Centro',null)
+Insert into Hospitales values (13,'Christus Muguerza',null,'8372-4724')
+Insert into Hospitales values (21,'Ginequito','Hidalgo 1842 Obispado','')
+Insert into Hospitales values (27,'Centro Medico de la Mujer','','8122-4714')
+
+/*Ejercicio 3*/
+Insert into Hospitales values (0,null,'15 de mayo 89 Centro','8122-2234')
+
+/*Ejercicio 4*/
+Insert into Hospitales values (null,'Hospital No. 33','Felix U. Gomez S/N','8122-2234')
+
+/*Ejercicio 5*/
+select * from Hospitales
+
+/*Ejercicio 6*/
+select * from Hospitales
+where Direccion= ' '
+
+/*Ejercicio 7*/
+select * from Hospitales
+where Telefono= ''
