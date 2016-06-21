@@ -261,3 +261,11 @@ Insert into Pedidos values (785,'06/30/2012',77,'Perla Najera Jimenez','45000')
 Insert into Pedidos values (322,'01/03/2013',621,'Antonio Lozano Garcia','23000')
 Insert into Pedidos values (973,'02/23/2012',654,'Brenda Salas Diaz','78000')
 Insert into Pedidos values (46,'10/10/2011',24,'Salvador Santos Lopez','32100')
+
+/*Ejercicio 1*/
+select No_Pedido,Fecha,Total from Pedidos
+where Total not in (20000,30000)
+
+/*Ejercicio 2*/
+select * from Pedidos
+where No_Empleado in (77,654,123) and Fecha > 01/01/2012
