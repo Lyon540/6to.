@@ -47,3 +47,37 @@ namespace ConsoleApplication1
     }
 
 }
+
+Programa de examen 1
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] meses = new int[12];
+            int suma = 0;
+            for (int i = 0; i < 12; i++)
+            {
+                Console.WriteLine("Teclea el ahorro");
+                meses[i] = int.Parse(Console.ReadLine());
+                suma += meses[i];
+            }
+            for (int i = 0; i < 12; i++)
+            {
+                Console.WriteLine(meses[i]);
+            }
+            Console.WriteLine(suma);
+            Console.WriteLine(meses.Average());
+            Console.ReadKey();
+        }
+    }
+}
+
