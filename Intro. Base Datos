@@ -269,3 +269,19 @@ where Total not in (20000,30000)
 /*Ejercicio 2*/
 select * from Pedidos
 where No_Empleado in (77,654,123) and Fecha > 01/01/2012
+
+/*Ejercicio 3*/
+select * from Pedidos
+where Total between 10000 and 20000
+
+/*Ejercicio 4*/
+select Fecha, No_Empleado, Total from Pedidos
+where Total not in (18000,15600,78000,12000)
+
+/*Ejercicio 5*/
+select No_Pedido, Fecha from Pedidos
+where Fecha between '01/30/2012' and '12/30/2012'
+
+/*Ejercicio 6*/
+select * from Pedidos
+where No_Empleado=654 and Fecha not between '02/01/2012'and'03/01/2012' and Total in (80000,10000,55000)
