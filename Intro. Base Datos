@@ -285,3 +285,42 @@ where Fecha between '01/30/2012' and '12/30/2012'
 /*Ejercicio 6*/
 select * from Pedidos
 where No_Empleado=654 and Fecha not between '02/01/2012'and'03/01/2012' and Total in (80000,10000,55000)
+
+Practica 3
+
+Create database Empresa
+Use Empresa
+
+Create table Empleados(
+Id_Empleado int Identity Primary Key,
+Nombre varchar(30),
+Apellidos varchar(30),
+Salario smallmoney,
+Departamento varchar(30) 
+)
+
+Insert into Empleados values ('Carlos','Jimenez Carrillo','12000','Contabilidad')
+Insert into Empleados values ('Elena','Rubio Torres','8000','Administracion')
+Insert into Empleados values ('Jose','Cantu Silva','6000','Produccion')
+Insert into Empleados values ('Margarita','Rodriguez Rojas','9000','Recursos Humanos')
+Insert into Empleados values ('Beatriz','Moya Salazar','12000','Recursos Humanos')
+Insert into Empleados values ('Arturo','Corral Salas','8500','Contabilidad')
+
+/*Ejercicio 1*/
+select * from Empleados
+order by Salario
+
+/*Ejercicio 2*/
+select Id_Empleado, Nombre, Salario from Empleados
+order by Salario desc
+
+/*Ejercicio 3*/
+select * from Empleados
+order by Salario, Departamento
+
+/*Ejercicio 4*/
+select Apellidos, Departamento from Empleados
+order by 2
+
+/*Ejercicio 5*/
+select + 'Id_Empleado' + ' ' + 'Apellidos' + ' ' + 'Salario' as 'Sueldo' from Empleados
