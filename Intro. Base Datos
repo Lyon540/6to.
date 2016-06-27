@@ -323,4 +323,4 @@ select Apellidos, Departamento from Empleados
 order by 2
 
 /*Ejercicio 5*/
-select + 'Id_Empleado' + ' ' + 'Apellidos' + ' ' + 'Salario' as 'Sueldo' from Empleados
+select + Id_Empleado, Apellidos, Salario as 'Sueldo' from Empleados
