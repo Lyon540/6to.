@@ -346,3 +346,17 @@ Insert into Articulos values ('Monitor', 'LCD 15 pulg', '1837.93', 1)
 Insert into Articulos values ('Mouse', 'Perfect Choice', '240.99', 15)
 Insert into Articulos values ('Teclado', 'Confort 2000', '329', 36)
 
+/*Ejercicio 1*/
+Select Nombre+' '+Descripcion as Articulo from Articulos
+
+/*Ejercicio 2*/
+Select *, Cantidad-5 from Articulos
+where Nombre='Teclado'
+
+/*Ejercicio 3*/
+Select *, Precio*.10 from Articulos
+where Nombre='Impresora'
+
+/*Ejercicio 4*/
+Select *, Cantidad+10 from Articulos
+where Nombre='Monitor'
