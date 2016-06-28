@@ -316,7 +316,7 @@ order by Salario desc
 
 /*Ejercicio 3*/
 select * from Empleados
-order by Salario, Departamento
+order by Salario desc, Departamento
 
 /*Ejercicio 4*/
 select Apellidos, Departamento from Empleados
@@ -324,3 +324,18 @@ order by 2
 
 /*Ejercicio 5*/
 select + Id_Empleado, Apellidos, Salario as 'Sueldo' from Empleados
+
+Practica 4
+
+Create database Tienda
+Use Tienda
+
+Create table Articulos(
+Codigo int identity Primary key,
+Nombre varchar(30),
+Descripcion varchar(30),
+Precio smallmoney,
+Cantidad tinyint
+)
+
+Insert into Articulos values ('Impresora', 'Epson Stylus C45', '400.50', 20)
