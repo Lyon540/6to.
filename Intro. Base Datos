@@ -360,3 +360,7 @@ where Nombre='Impresora'
 /*Ejercicio 4*/
 Select *, Cantidad+10 from Articulos
 where Nombre='Monitor'
+
+/*Ejercicio 5*/
+Select *, Precio*1.05 from Articulos
+where Cantidad>20
