@@ -339,3 +339,10 @@ Cantidad tinyint
 )
 
 Insert into Articulos values ('Impresora', 'Epson Stylus C45', '400.50', 20)
+Insert into Articulos values ('Impresora', 'Epson Stylus C85', '500', 10)
+Insert into Articulos values ('Monitor', 'Samsung 14', '800', 0)
+Insert into Articulos values ('Teclado', 'Ingles Buswal', '185', 50)
+Insert into Articulos values ('Monitor', 'LCD 15 pulg', '1837.93', 1)
+Insert into Articulos values ('Mouse', 'Perfect Choice', '240.99', 15)
+Insert into Articulos values ('Teclado', 'Confort 2000', '329', 36)
+
