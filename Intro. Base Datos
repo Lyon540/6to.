@@ -371,3 +371,18 @@ Update Articulos set Precio = Precio*1.15
 /*Ejercicio 7*/
 Update Articulos set Cantidad =Cantidad-1
 where Cantidad>0
+
+Practica 5
+
+Create database Empresas
+Use Empresas
+
+Create table Clientes(
+Id_Cliente int Primary Key,
+RazonSocial Varchar (60),
+Contacto Varchar (50),
+Direccion Varchar (50),
+Ciudad Varchar (30),
+Estado Varchar (30),
+RFC Varchar (10)
+)
