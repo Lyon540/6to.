@@ -379,10 +379,57 @@ Use Empresas
 
 Create table Clientes(
 Id_Cliente int Primary Key,
-RazonSocial Varchar (60),
-Contacto Varchar (50),
-Direccion Varchar (50),
+RazonSocial Varchar (80),
+Contacto Varchar (80),
+Direccion Varchar (80),
 Ciudad Varchar (30),
 Estado Varchar (30),
-RFC Varchar (10)
+RFC Varchar (15)
 )
+
+Insert into Clientes values (1, 'Petroleos Mexicanos', 'Victor Alfonso Sanchez Delgado', 'Av.Alvaro Obregon s/n', 'Madero', 'Tamaulipas', 'PEMX19380318')
+Insert into Clientes values (2, 'Converngs Ceramica SA. de CV.', 'Jose Eduardo Mendez Sanchez', 'Calle 10 num. 105', 'Morelia', 'Michoacan', 'COCR19951211')
+Insert into Clientes values (3, 'El Doario de Tampico SA. de CV.', 'Victor Manuel Garza Garcia', 'Calle Altamarina s/n', 'Tampico', 'Tamaulipas', 'DITM19930101')
+Insert into Clientes values (4, 'Gasolinera las Palmas SA. de CV.', 'Martha Maria Banda Martinez', 'Aguadulce 503', 'Culiacan', 'Sinaloa', 'GAPL19980521')
+Insert into Clientes values (8, 'Gasolineras Leal SA. de CV.', 'Mauricio Sanchez Torres', 'Garza Sada 345', 'Monterrey', 'Nuevo Leon', 'GALL17384993')
+Insert into Clientes values (13, 'Articulos para el Hogar', 'Sonia Garcia Salinas', 'Av. Principal s/n', 'Torreon', 'Coahuila', 'AHGA13876233')
+
+/*Ejercicio 1*/
+Select * from Clientes
+Where RFC like 'GA%'
+
+/*Ejercicio 2*/
+Select Id_Cliente, RazonSocial from Clientes
+Where RazonSocial like '%SA. de CV.'
+
+/*Ejercicio 3*/
+Select * from Clientes
+Where Contacto like 'Vic%'
+
+/*Ejercicio 4*/
+Select Id_Cliente, RazonSocial, RFC from Clientes
+Where RFC like '%1'
+
+/*Ejercicio 5*/
+Select Id_Cliente, RazonSocial, Ciudad from Clientes
+Where Ciudad not like 'M%'
+
+/*Ejercicio 6*/
+Select Id_Cliente, RazonSocial, Ciudad from Clientes
+Where Ciudad like '_______'
+--
+/*Ejercicio 7*/
+Select Id_Cliente, RazonSocial, Estado from Clientes
+Where Estado not like '_________s'
+
+/*Ejercicio 8*/
+Select * from Clientes
+Where RazonSocial like '__%t%'
+
+/*Ejercicio 9*/
+Select * from Clientes
+Where Contacto like '[R-Z]%'
+
+/*Ejercicio 10*/
+Select RazonSocial, Contacto, RFC from Clientes
+Where Contacto not like '[J,M]%'
