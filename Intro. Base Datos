@@ -363,4 +363,11 @@ where Nombre='Monitor'
 
 /*Ejercicio 5*/
 Select *, Precio*1.05 from Articulos
-where Cantidad>20
+where Cantidad >=20
+
+/*Ejercicio 6*/
+Update Articulos set Precio = Precio*1.15
+
+/*Ejercicio 7*/
+Update Articulos set Cantidad =Cantidad-1
+where Cantidad>0
