@@ -420,7 +420,7 @@ Where Ciudad like '_______'
 --
 /*Ejercicio 7*/
 Select Id_Cliente, RazonSocial, Estado from Clientes
-Where Estado not like '_________s'
+Where Estado like '__________' and Estado not like '%s'
 
 /*Ejercicio 8*/
 Select * from Clientes
