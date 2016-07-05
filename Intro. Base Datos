@@ -539,3 +539,14 @@ Insert into Compradores values ('Liliana Garcia','50','F','Morones Prieto 7456',
 Insert into Compradores values ('Roxana Lopez','20','F','Pase de los Leones 74','Monterrey','8345-9625','4800')
 Insert into Compradores values ('Juan Torres','43','M','Zaragoza 3200','Monterrey',null,'1530')
 
+/*Ejercicio 1*/
+Select Ciudad, count(*) as 'Compradores por ciudad' from Compradores
+Group by Ciudad
+
+/*Ejercicio 2*/
+Select Ciudad,count(Telefono) as 'Compradores con telefono en la ciudad' from Compradores
+Group by Ciudad
+
+/*Ejercicio 3*/
+Select count(*) as 'Compradores por ciudad' from Compradores
+Group by Ciudad
