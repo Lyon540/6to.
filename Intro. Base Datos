@@ -450,3 +450,66 @@ Salario money
 )
 
 Insert into Empleados values (2, 'Karla', 'Merinos Fuentes', '01/24/1983', 'F', 'Secretaria', '8000')
+Insert into Empleados values (45, 'Jose', 'Lopez Farias', '02/12/1975', 'M', 'Capturista', '9000')
+Insert into Empleados values (21, 'Maricela', 'Rodriguez Niño', '05/30/1981', 'F', 'Analista de Sistemas', '12000')
+Insert into Empleados values (1, 'Abigail', 'Arzola Juarez', '02/23/1982', 'F', 'Contador', '11500')
+Insert into Empleados values (34, 'Mercedes', 'Santos Chavez', '11/20/1979', 'F', 'Gerente de RH', '44000')
+Insert into Empleados values (4, 'Ivan', 'Colunga Mata', '09/18/1975', 'M', 'Contador', '11000')
+Insert into Empleados values (57, 'Carlos', 'Hernandez Solis', '10/28/1963', 'M', 'Gerente de Sistemas', '45000')
+Insert into Empleados values (3, 'Victor', 'Urbina Juarez', '01/05/1978', 'M', 'Analista de Sistemas', '12500')
+Insert into Empleados values (23, 'Cristina', 'Elizondo Torres', '09/18/1984', 'F', 'Capturista', '9000')
+Insert into Empleados values (55, 'Elizabeth', 'Saldaña Diaz', '07/20/1972', 'F', 'Gerente Administrativo', '42000')
+Insert into Empleados values (75, 'Walter', 'Ruiz Vera', '05/13/1977', 'M', 'Obrero', '8000')
+Insert into Empleados values (234, 'Eder', 'Hernandez Wong', '08/26/1982', 'M', 'Diseñador', '12000')
+
+/*Ejercicio 1*/
+Select AVG (Salario) as 'Salario Promedio' from Empleados
+
+/*Ejercicio 2*/
+Select Sum (Salario) as 'Suma de Salarios' from Empleados
+
+/*Ejercicio 3*/
+Select Count (*) as 'Numero de Registros' from Empleados
+
+/*Ejercicio 4*/
+Select AVG (Salario) as 'Salario Promedio' from Empleados
+Where Sexo ='M'
+
+/*Ejercicio 5*/
+Select Max (Salario) as 'Maximo Salario', Min (Salario) as 'Minimo Salario' from Empleados
+
+/*Ejercicio 6*/
+Select Sum (Salario) as 'Suma total de Salario' from Empleados
+Where Sexo = 'F'
+
+/*Ejercicio 7*/
+Select Count (*) as 'Cantidad de Mujeres' from Empleados
+Where Sexo = 'F'
+
+/*Ejercicio 8*/
+Select Max (Salario) as 'Maximo Salario', Min (Salario) as 'Minimo Salario' from Empleados
+Where Cargo like '%Gerente%'
+
+/*Ejercicio 9*/
+Select AVG (Salario) as 'Salario Promedio Contadores' from Empleados
+Where Cargo = 'Contador'
+
+/*Ejercicio 10*/
+Select AVG (Salario) as 'Salario promedio de los Gerentes' from Empleados
+Where Cargo like '%Gerente%'
+
+/*Ejercicio 12*/
+Select Max (Salario) as 'Maximo Sueldo Juarez' from Empleados
+Where Apellidos like '%Juarez%'
+
+/*Ejercicio 13*/
+Select Count (*) as 'Cantidad de Hombres' from Empleados
+Where Sexo = 'M'
+
+/*Ejercicio 14*/
+Select Count (*) as 'Cantidad de Gerentes' from Empleados
+Where Cargo like '%Gerente%'
+
+/*Ejercicio 15*/
+Select Count (*) as 'Cantidad de Capturistas' from Empleados
+Where Cargo = 'Capturista'
