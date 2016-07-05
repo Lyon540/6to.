@@ -436,3 +436,17 @@ Where Contacto not like '[J,M]%'
 
 Practica 6
 
+Create database Empresa
+Use Empresa
+
+Create table Empleados(
+Id_Empleado Int Primary Key,
+Nombre varchar(40),
+Apellidos varchar(40),
+Fecha_Nac datetime,
+Sexo Varchar(1),
+Cargo varchar(25),
+Salario money
+)
+
+Insert into Empleados values (2, 'Karla', 'Merinos Fuentes', '01/24/1983', 'F', 'Secretaria', '8000')
