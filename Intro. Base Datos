@@ -513,3 +513,29 @@ Where Cargo like '%Gerente%'
 /*Ejercicio 15*/
 Select Count (*) as 'Cantidad de Capturistas' from Empleados
 Where Cargo = 'Capturista'
+
+Practica 7
+
+Create database Clientes
+Use Clientes
+
+Create table Compradores (
+Nombre varchar(40),
+Edad Varchar(60),
+Sexo char(1),
+Domicilio varchar(60),
+Ciudad varchar(20),
+Telefono varchar(13),
+MontoCompra Float not null
+)
+
+Insert into Compradores values ('Susana Molina','28','F',null,'Santa Catarina',null,'4500')
+Insert into Compradores values ('Maricela Mercado','36','F','Alfonso Reyes 452','Santa Catarina','8345-9952','2240')
+Insert into Compradores values ('Alberto Garcia','35','M','General Anaya 729','Monterrey','8106-9523','2500')
+Insert into Compradores values ('Teresa Garcia','33','F','Desconocido','Monterrey','8624-9652','1200')
+Insert into Compradores values ('Roberto Perez','45','M','Urdiales 412','Santa Catarina','8374-9625','3320')
+Insert into Compradores values ('Marina Torres','22','F','Mar Caspio 254','Guadalupe','8345-6322','9500')
+Insert into Compradores values ('Liliana Garcia','50','F','Morones Prieto 7456','San Pedro',null,'2400')
+Insert into Compradores values ('Roxana Lopez','20','F','Pase de los Leones 74','Monterrey','8345-9625','4800')
+Insert into Compradores values ('Juan Torres','43','M','Zaragoza 3200','Monterrey',null,'1530')
+
