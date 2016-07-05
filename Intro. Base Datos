@@ -433,3 +433,6 @@ Where Contacto like '[R-Z]%'
 /*Ejercicio 10*/
 Select RazonSocial, Contacto, RFC from Clientes
 Where Contacto not like '[J,M]%'
+
+Practica 6
+
