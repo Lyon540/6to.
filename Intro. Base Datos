@@ -548,5 +548,17 @@ Select Ciudad,count(Telefono) as 'Compradores con telefono en la ciudad' from Co
 Group by Ciudad
 
 /*Ejercicio 3*/
-Select count(*) as 'Compradores por ciudad' from Compradores
+Select Sexo, sum(MontoCompra) as 'Compras Totales' from Compradores
+Group by Sexo
+
+/*Ejercicio 4*/
+Select Sexo, Ciudad, Max (MontoCompra) as 'Maximo Salario', Min (MontoCompra) as 'Minimo Salario' from Compradores
+Group by Sexo, Ciudad
+
+/*Ejercicio 5*/
+Select Ciudad, AVG (MontoCompra) as 'Ventas Promedio' from Compradores
+Group by Ciudad
+
+/*Ejercicio 6*/
+Select Ciudad, count(Ciudad) as 'Compradores sin domicilio' from Compradores
 Group by Ciudad
