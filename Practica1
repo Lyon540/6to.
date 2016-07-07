@@ -322,16 +322,12 @@ namespace ConsoleApplication5
     {
         static void Main(string[] args)
         {
-            float[] EstaturaHombres = new float[] {177,168,150,180,190};
-            float SumaHombres = 0;
-            float PromedioHombres = 0;
-
-            float[] EstaturaMujeres = new float[] { 164,170,150,140,157 };
-            float SumaMujeres = 0;
-            float PromedioMujeres = 0;
+            int[] EstaturaHombres = new int[] { 177, 168, 150, 180, 190 };
+            int SumaHombres = 0;
+            int PromedioHombres = 0;
 
             Console.WriteLine("La estatura de los Hombres son:");
-            for (int i =0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine(EstaturaHombres[i]);
                 SumaHombres += EstaturaHombres[i];
@@ -339,22 +335,27 @@ namespace ConsoleApplication5
             }
             Console.WriteLine("Las estaturas promedio de los hombres son:");
             Console.WriteLine(PromedioHombres);
-            
-           
+            int a = 0;
+            int b = 0;
 
-            /*Comienza lo de las mujeres*/
-            Console.WriteLine("La estatura de las Mujeres son:");
-            for (int j = 0; j < 5; j++)
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(EstaturaMujeres[j]);
-                SumaMujeres += EstaturaMujeres[j];
-                PromedioMujeres = SumaMujeres / 5;
+                if (EstaturaHombres[i] > 173)
+                {
+                    a = i + 1;
+                }
+                else
+                {
+                    b = i + 1;
+                }
             }
 
-            Console.WriteLine("Las estaturas promedio de las Mujeres son:");
-            Console.WriteLine(PromedioMujeres);
+            Console.WriteLine("Los Hombres que estan arriba del prromedio son:");
+            Console.WriteLine(a);
+
+            Console.WriteLine("Los Hombres que estan abajo del promedio son:");
+            Console.WriteLine(b);
             Console.ReadKey();
         }
     }
 }
-
