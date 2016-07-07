@@ -561,4 +561,5 @@ Group by Ciudad
 
 /*Ejercicio 6*/
 Select Ciudad, count(Ciudad) as 'Compradores sin domicilio' from Compradores
+Where Domicilio is null or Domicilio= 'Desconocido'
 Group by Ciudad
