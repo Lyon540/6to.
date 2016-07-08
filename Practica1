@@ -267,46 +267,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+namespace ConsoleApplication3
 {
     class Program
     {
         static void Main(string[] args)
         {
-                int[] lista1 = new int[] {70,60,50,80,100};
-                int suma1 = 0;
-                int promedio1 = 0;
+            int[] lista1 = new int[] { 70, 60, 50, 80, 100 };
+            int suma1 = 0;
+            int promedio1 = 0;
             int[] lista2 = new int[] { 90, 80, 40, 70, 60 };
             int suma2 = 0;
             int promedio2 = 0;
-                Console.WriteLine("Las calificaciones de la materia Fisica son:");
-                for (int i = 0; i < 5; i++)
-                {
-                    suma1 += lista1[i];
-                    Console.WriteLine(lista1[i]);
-                    promedio1 = suma1 / 5;
-                }
+            Console.WriteLine("Las calificaciones de la materia Fisica son:");
+            for (int i = 0; i < 5; i++)
+            {
+                suma1 += lista1[i];
+                Console.WriteLine(lista1[i]);
+                promedio1 = suma1 / 5;
+            }
 
             Console.WriteLine("Las calificaciones de la materia Matematicas son:");
-                for (int j=0;j<5;j++)
+            for (int j = 0; j < 5; j++)
             {
                 suma2 += lista2[j];
                 Console.WriteLine(lista2[j]);
                 promedio2 = suma2 / 5;
             }
-                Console.WriteLine("El total de la suma de la materia Fisica es:");
-                Console.WriteLine(suma1);
-                Console.WriteLine("El promedio del grupo A es:");
-                Console.WriteLine(promedio1);
+
+          
+            Console.WriteLine("El total de la suma de la materia Fisica es:");
+            Console.WriteLine(suma1);
+            Console.WriteLine("El promedio de la materia de Fisica es:");
+            Console.WriteLine(promedio1);
 
             Console.WriteLine("El total de la suma de la materia Matematicas es:");
             Console.WriteLine(suma2);
-            Console.WriteLine("El promedio del grupo B es:");
+            Console.WriteLine("El promedio de la materia de Matematicas es:");
             Console.WriteLine(promedio2);
-            Console.ReadKey();
+
+            if (promedio1 < promedio2)
+            {
+                Console.WriteLine("El grupo que tiene mayor promedio es: Matematicas");
+
             }
+            else
+            {
+                Console.WriteLine("El grupo que tiene mayor promedio es: Fisica");
+            }
+            Console.ReadKey();
         }
     }
+}
 
 Problema 7
 
