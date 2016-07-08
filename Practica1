@@ -328,7 +328,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication3
+namespace ConsoleApplication1
 {
     class Program
     {
@@ -354,11 +354,11 @@ namespace ConsoleApplication3
             {
                 if (EstaturaHombres[i] > 173)
                 {
-                    a = i ++;
+                    a ++;
                 }
                 else
                 {
-                    b = i ++;
+                    b ++;
                 }
             }
 
@@ -371,4 +371,3 @@ namespace ConsoleApplication3
         }
     }
 }
-
