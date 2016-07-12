@@ -151,6 +151,42 @@ namespace ConsoleApplication2
     }
 }
 
+Programa 6 en el salon
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] calificaciones = new int[2, 5];
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.WriteLine("califaciones");
+                    calificaciones[i, j] = int.Parse(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.WriteLine(calificaciones[i, j]);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
 Metodo de burbuja
 
 using System;
