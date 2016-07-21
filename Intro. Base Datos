@@ -563,3 +563,30 @@ Group by Ciudad
 Select Ciudad, count(Ciudad) as 'Compradores sin domicilio' from Compradores
 Where Domicilio is null or Domicilio= 'Desconocido'
 Group by Ciudad
+
+Tercer Parcia 
+
+Create database Empresa
+Use Empresa
+
+Create table Clientes(
+Nombre varchar(40),
+Edad varchar(60),
+Sexo char(1),
+Domicilio varchar(60),
+Ciudad varchar(40),
+Telefono varchar(13),
+MontoCompra float not null
+)
+
+Insert into Clientes values('Susana Molina', '28', 'F', Null, 'Santa Catarina', Null, '4500')
+Insert into Clientes values('Marcela Mercado', '36', 'F', 'Alfonso Reyes 452', 'Santa Catarina', '8345-9952', '2240')
+Insert into Clientes values('Alberto Garcia', '35', 'M', 'General Anaya 729', 'Monterrey', '8106-9523', '2500')
+Insert into Clientes values('Teresa Garcia', '33', 'F', 'Desconocido', 'Monterrey', '8624-9652', '1200')
+Insert into Clientes values('Roberto Perez', '45', 'M', 'Urdiales 412', 'Santa Catarina', '8374-9625', '3320')
+Insert into Clientes values('Marina Torres', '22', 'F', 'Mar Caspio 254', 'Guadalupe', '8345-6322', '9500')
+Insert into Clientes values('Liliana Garcia', '50', 'F', 'Morones Prieto 7456', 'San Pedro', Null, '2400')
+Insert into Clientes values('Roxana Lopez', '20', 'F', 'Pase de los Leones 74', 'Monterrey', '8345-9625', '4800')
+Insert into Clientes values('Juan Torres', '43', 'M', 'Zaragoza 3200', 'Monterrey', Null, '1530')
+
+/*Ejercicio 1*/
