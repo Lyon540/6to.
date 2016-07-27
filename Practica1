@@ -463,3 +463,29 @@ namespace ConsoleApplication1
         }
     }
 }
+
+
+Tercer Parcial
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List <string> nombres=new List<string>{"Luis", "Alfredo", "Maria", "Elvira", "Mercedes" };
+            nombres.Sort();
+            foreach(string dato in nombres)
+            {
+                Console.WriteLine(dato);
+            }
+            Console.ReadKey();
+        }
+    }
+}
