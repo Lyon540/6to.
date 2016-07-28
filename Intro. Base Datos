@@ -590,3 +590,7 @@ Insert into Clientes values('Roxana Lopez', '20', 'F', 'Pase de los Leones 74', 
 Insert into Clientes values('Juan Torres', '43', 'M', 'Zaragoza 3200', 'Monterrey', Null, '1530')
 
 /*Ejercicio 1*/
+Select sum(MontoCompra) as 'Total de compra', Sexo, Ciudad from Clientes
+group by Ciudad, Sexo
+having sum(MontoCompra) >5000
+
