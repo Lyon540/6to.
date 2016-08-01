@@ -564,7 +564,8 @@ Select Ciudad, count(Ciudad) as 'Compradores sin domicilio' from Compradores
 Where Domicilio is null or Domicilio= 'Desconocido'
 Group by Ciudad
 
-Tercer Parcia 
+Tercer Parcial
+Practica 1
 
 Create database Empresa
 Use Empresa
@@ -594,3 +595,29 @@ Select sum(MontoCompra) as 'Total de compra', Sexo, Ciudad from Clientes
 group by Ciudad, Sexo
 having sum(MontoCompra) >5000
 
+/*Ejercicio 2*/
+Select sum(MontoCompra) as 'Total de compra', Sexo, Ciudad from Clientes
+where Ciudad<> 'Santa Catarina' and Telefono <> 'Null'
+group by Ciudad, Sexo
+having sum(MontoCompra) >2000
+
+/*Ejercicio 3*/
+Select Max(MontoCompra) as 'Maximo Sueldo', Ciudad from Clientes
+where Sexo ='F'
+group by Ciudad
+
+/*Ejercicio 4*/
+Select count(Ciudad) as 'Total de compradores', sum(MontoCompra) as 'Sumatoria sueldos', avg(MontoCompra) as 'Promedio de compra', Sexo, Ciudad from Clientes
+group by Ciudad, Sexo
+having avg(MontoCompra) >3000
+
+/*Ejercicio 5*/
+Select count(Ciudad) as 'Total de compradores', Ciudad, Sexo from Clientes 
+group by Ciudad, Sexo
+having count (ciudad) >=2 
+
+/*Ejercicio 6*/
+Select count (Ciudad) as 'Total de compradores', Ciudad, Sexo from Clientes
+where Domicilio like '%a%' and Ciudad <> 'Santa Catarina'
+Group by Ciudad, Sexo
+Having count (Ciudad)<=1
