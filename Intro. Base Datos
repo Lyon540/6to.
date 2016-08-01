@@ -621,3 +621,43 @@ Select count (Ciudad) as 'Total de compradores', Ciudad, Sexo from Clientes
 where Domicilio like '%a%' and Ciudad <> 'Santa Catarina'
 Group by Ciudad, Sexo
 Having count (Ciudad)<=1
+
+Practica 2
+
+Create database Gobierno
+Use Gobierno
+
+Create table Empleados(
+No_Empleado int Primary Key,
+Nombre Varchar (60),
+EstadoCivil varchar (1),
+Departamento varchar (30),
+)
+
+Insert into Empleados values (1237, 'Alberto Lopez', 'C', 'Sistemas')
+Insert into Empleados values (321, 'Beatriz Garcia', 'C', 'Administracion')
+Insert into Empleados values (234, 'Carlos Fuentes', 'S', 'Administracion')
+Insert into Empleados values (3244, 'Daniela Garcia', 'S', 'Sistemas')
+Insert into Empleados values (43, 'Esther Juarez', 'C', 'Sistemas')
+Insert into Empleados values (8949, 'Fabian Torres', 'S', 'Sistemas')
+Insert into Empleados values (645, 'Gabriela Lopez', Null, 'Sistemas')
+Insert into Empleados values (345, 'Hector Garcia', Null, 'Administracion')
+
+/*Ejercicio 1*/
+Select Departamento from Empleados
+Group by Departamento
+
+/*Ejercicio 2*/
+Select EstadoCivil from Empleados
+Group by EstadoCivil
+
+/*Ejercicio 3*/
+Select top(5) * from Empleados
+
+/*Ejercicio 4*/
+Select top (4) Nombre, Departamento from Empleados
+order by Departamento
+
+/*Ejercicio 5*/
+Select top (6) Nombre, EstadoCivil, Departamento from Empleados
+order by EstadoCivil, Departamento
