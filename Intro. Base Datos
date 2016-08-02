@@ -649,10 +649,12 @@ Group by Departamento
 
 /*Ejercicio 2*/
 Select EstadoCivil from Empleados
+where EstadoCivil <> 'Null'
 Group by EstadoCivil
 
 /*Ejercicio 3*/
 Select top(5) * from Empleados
+where EstadoCivil <> 'Null'
 
 /*Ejercicio 4*/
 Select top (4) Nombre, Departamento from Empleados
@@ -660,4 +662,5 @@ order by Departamento
 
 /*Ejercicio 5*/
 Select top (6) Nombre, EstadoCivil, Departamento from Empleados
+where EstadoCivil <> 'Null'
 order by EstadoCivil, Departamento
