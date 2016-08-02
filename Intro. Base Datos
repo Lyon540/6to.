@@ -690,11 +690,7 @@ Add Codigo int identity
 
 /*Ejercicio 3*/
 Alter table Maestros
-Add Correo varchar (20) null
-
-/*Ejercicio 3*/
-Alter table Maestros
-Add Correo varchar (20) null
+Add Correo varchar (20) null default 'Sin correo'
 
 /*Ejercicio 4*/
 Alter table Maestros
@@ -708,9 +704,6 @@ Alter column Domicilio varchar (60)
 Alter table Maestros
 Alter column Correo varchar (40)
 
-/*Ejercicio 5*/
-Alter table Maestros
-Alter column Domicilio varchar (60)
 Select * From Maestros
 
 Insert into Maestros values ('Perez','Juan','Colon 123','1981-10-23','15000','1','jp@correo.com')
