@@ -664,3 +664,74 @@ order by Departamento
 Select top (6) Nombre, EstadoCivil, Departamento from Empleados
 where EstadoCivil <> 'Null'
 order by EstadoCivil, Departamento
+
+Practica 3
+
+Create database UMM
+Use UMM
+
+Create table Maestros(
+Apellido varchar (30),
+Nombre varchar (20),
+Domicilio varchar (30),
+FechaIngreso datetime
+)
+
+Insert into Maestros values ('Perez','Marcela','Arteaga','1990-03-30')
+Insert into Maestros values ('Rodriguez','Pablo','','')
+
+/*Ejercicio 1*/
+Alter table Maestros 
+Add Sueldo float
+
+/*Ejercicio 2*/
+Alter table Maestros
+Add Codigo int identity
+
+/*Ejercicio 3*/
+Alter table Maestros
+Add Correo varchar (20) null
+
+/*Ejercicio 3*/
+Alter table Maestros
+Add Correo varchar (20) null
+
+/*Ejercicio 4*/
+Alter table Maestros
+Alter column Nombre varchar (60)
+
+/*Ejercicio 5*/
+Alter table Maestros
+Alter column Domicilio varchar (60)
+
+/*Ejercicio 6*/
+Alter table Maestros
+Alter column Correo varchar (40)
+
+/*Ejercicio 5*/
+Alter table Maestros
+Alter column Domicilio varchar (60)
+Select * From Maestros
+
+Insert into Maestros values ('Perez','Juan','Colon 123','1981-10-23','15000','1','jp@correo.com')
+Insert into Maestros values (Null, Null,'Sucre 456','1995-06-12','9500','2','am@correo.com')
+
+/*Ejercicio 8*/
+Alter table Maestros
+Alter Column Nombre varchar (60) not null
+
+/*Ejercicio 9*/
+Alter table Maestros
+Alter Column Nombre varchar(60) null
+
+/*Ejercicio 10*/
+Alter table Maestros
+Drop column Sueldo
+
+/*Ejercicio 11*/
+Alter table Maestros
+Drop Column Correo
+
+/*Ejercicio 12*/
+Alter table Maestros
+Drop Column Codigo, FechaIngreso
