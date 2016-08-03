@@ -728,3 +728,71 @@ Drop Column Correo
 /*Ejercicio 12*/
 Alter table Maestros
 Drop Column Codigo, FechaIngreso
+
+Practica 4
+
+Create database UMM
+Use UMM
+
+/*Primera Tabla*/
+
+Create table Cursos (
+Id_Curso Int Primary Key,
+Nombre Varchar (60),
+Id_Profesor Int
+)
+
+Insert into Cursos Values (1,'Programacion I',3)
+Insert into Cursos Values (2,'Base de Datos',3)
+Insert into Cursos Values (3,'SQL',1)
+Insert into Cursos Values (4,'Dibujo Tecnico',2)
+Insert into Cursos Values (5,'SQL Avanzado',' ')
+
+/*Segunda Tabla*/
+
+Create table Profesores(
+Id_Profesor Int Primary key,
+Nombre Varchar (30),
+Apellidos Varchar(50),
+Fecha_Nac Datetime
+)
+
+Insert into Profesores Values (1,'Federico','Garza Flores', '1870/06/23')
+Insert into Profesores Values (2,'Ana','Lopez Roman', '1973/10/09')
+Insert into Profesores Values (3,'Raul','Hernandez Diaz', '1984/12/28')
+
+/*Tercera Tabla*/
+
+Create table Alumnos (
+Id_Alumno Int Primary Key,
+Nombre Varchar (30),
+Apellidos Varchar (50),
+Fecha_Nac datetime
+)
+
+Insert into Alumnos Values (1,'Pablo','Hernandez Mata', '1995/03/14')
+Insert into Alumnos Values (2,'Juan','Santos Lara', '1993/07/12')
+Insert into Alumnos Values (3,'Teresa','Lopez Frias', '1989/06/19')
+Insert into Alumnos Values (4,'Martha','Fernando Soto', '1992/11/23')
+Insert into Alumnos Values (5,'Sergio','Ortiz Carranza', '1991/04/21')
+Insert into Alumnos Values (6,'Carmen','Diaz Salas', '1987/12/04')
+
+/*Cuarta Tabla*/
+
+Create table Alumnos_Cursos(
+Id_Alumno Int Primary Key,
+Id_Curso Int
+)
+
+Insert into Alumnos_Cursos Values (1,1)
+Insert into Alumnos_Cursos Values (3,1)
+Insert into Alumnos_Cursos Values (5,1)
+Insert into Alumnos_Cursos Values (4,2)
+Insert into Alumnos_Cursos Values (1,3)
+Insert into Alumnos_Cursos Values (5,3)
+Insert into Alumnos_Cursos Values (2,4)
+
+/*Ejercico 1*/
+Select Cursos.Id_Curso, Cursos.Nombre, Profesores.Id_Profesor, Profesores.Apellidos, Profesores.Nombre, Profesores.Fecha_Nac from Cursos
+Inner Join Profesores
+On Cursos.Id_Profesor = Profesores.Id_Profesor
