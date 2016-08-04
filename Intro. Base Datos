@@ -780,7 +780,7 @@ Insert into Alumnos Values (6,'Carmen','Diaz Salas', '1987/12/04')
 /*Cuarta Tabla*/
 
 Create table Alumnos_Cursos(
-Id_Alumno Int Primary Key,
+Id_Alumno Int,
 Id_Curso Int
 )
 
@@ -796,3 +796,9 @@ Insert into Alumnos_Cursos Values (2,4)
 Select Cursos.Id_Curso, Cursos.Nombre, Profesores.Id_Profesor, Profesores.Apellidos, Profesores.Nombre, Profesores.Fecha_Nac from Cursos
 Inner Join Profesores
 On Cursos.Id_Profesor = Profesores.Id_Profesor
+
+/*Ejercicio 2*/
+Select Cursos.Nombre, Alumnos_Cursos.Id_Alumno from Cursos
+inner Join Alumnos_Cursos
+On Cursos.Id_Curso = Alumnos_Cursos.Id_Curso
+where Alumnos_Cursos.Id_Alumno = 1
