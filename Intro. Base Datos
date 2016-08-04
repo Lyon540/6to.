@@ -802,3 +802,20 @@ Select Cursos.Nombre, Alumnos_Cursos.Id_Alumno from Cursos
 inner Join Alumnos_Cursos
 On Cursos.Id_Curso = Alumnos_Cursos.Id_Curso
 where Alumnos_Cursos.Id_Alumno = 1
+
+/*Ejercicio 3*/
+Select Alumnos.Id_Alumno, Alumnos.Nombre, Alumnos.Apellidos, Cursos.Id_Curso ,Cursos.Nombre from Alumnos
+Inner Join Alumnos_Cursos
+On Alumnos.Id_Alumno =Alumnos_Cursos.Id_Alumno
+Inner Join Cursos
+On Alumnos_Cursos.Id_Curso = Cursos.Id_Curso
+
+/*Ejercicio 4*/
+Select Cursos.Id_Curso, Cursos.Nombre, Cursos.Id_Profesor, Profesores.Nombre from Cursos
+Left Join Profesores
+On Cursos.Id_Profesor = Profesores.Id_Profesor
+
+/*Ejercicio 5*/
+Select Cursos.Id_Curso, Cursos.Nombre, Cursos.Id_Profesor, Profesores.Nombre from Cursos
+Right Join Profesores
+On Cursos.Id_Profesor = Profesores.Id_Profesor
