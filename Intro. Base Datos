@@ -816,6 +816,32 @@ Left Join Profesores
 On Cursos.Id_Profesor = Profesores.Id_Profesor
 
 /*Ejercicio 5*/
-Select Cursos.Id_Curso, Cursos.Nombre, Cursos.Id_Profesor, Profesores.Nombre from Cursos
-Right Join Profesores
-On Cursos.Id_Profesor = Profesores.Id_Profesor
+Select Cursos.Id_Curso, Cursos.Nombre, Cursos.Id_Profesor, Profesores.Nombre from Profesores
+Right Join Cursos
+On  Profesores.Id_Profesor=Cursos.Id_Profesor 
+
+/*Ejercicio 6*/
+Select Cursos.Id_Curso, Cursos.Nombre, Cursos.Id_Profesor, Profesores.Nombre, Profesores.Apellidos from Profesores
+Right join Cursos
+On Profesores.Id_Profesor=Cursos.Id_Profesor
+where Profesores.Apellidos not like '%E%'
+
+/*Ejercicio 7*/
+Select Cursos.Id_Curso, Profesores.Nombre, Profesores.Apellidos from Cursos
+Inner Join Profesores
+On Cursos.Id_Profesor=Profesores.Id_Profesor
+
+/*Ejercicio 8*/
+Select Cursos.Id_Curso, count (Alumnos_Cursos.Id_Alumno) as 'Numero de Alumnos por materia'  from Cursos
+Right Join Alumnos_Cursos
+On Cursos.Id_Curso = Alumnos_Cursos.Id_Curso
+Group by Cursos.Id_Curso
+
+/*Ejercicio 9: Realice un Cross join con las tablas Cursos y Profesores.*/
+Select Cursos.Id_Curso,Cursos.Nombre,Cursos.Id_Profesor, Profesores.Nombre, Profesores.Apellidos From Cursos
+Cross Join Profesores
+
+/*Ejercicio 10: Realice un Full join con las tablas Alumnos y Alumnos cursos*/
+Select * from Alumnos
+FULL OUTER JOIN Alumnos_Cursos
+On Alumnos.Id_Alumno= Alumnos_Cursos.Id_Alumno
